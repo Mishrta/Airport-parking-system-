@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Logo - Left */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+/* Navbar - Center */
+.navbar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #2a2e4c;
+}
+
+/* User Info Section - Right (Welcome Message, Dashboard, Logout) */
+.user-auth {
+    display: flex;
+    align-items: center;
+    gap: 8px;  /* Increase gap between elements */
+    font-size: 16px;
+    margin-left: auto;  /* Align user info to the right */
+    z-index: 1001;
+}
+
+.user-auth span {
+    color: black;
+}
+
+.user-auth a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.user-auth a:hover {
+    color: #d9006c;
+}
+
+/* Logout Button */
+.logout-btn {
+    background-color: #8c292a;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.logout-btn:hover {
+    background-color: #9c5454;
+}
+
+/* Login Button - Right (If user is not logged in) */
+.login-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-btn i {
+    font-size: 18px;
+    color: #4a235a;
+    margin-right: 40px;
+}
+
+.login-btn:hover {
+    color: #d9006c;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .user-auth {
+        align-self: flex-end;
+        margin-top: 10px;
+    }
+}

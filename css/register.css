@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #2a2e4c;
+    color: #333;
+    text-align: center;
+}
+
+/* Register Section */
+.register {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    margin: 200px auto 50px; /* ⬅️ pushes it down */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.register h2 {
+    margin-bottom: 20px;
+    color: #2a2e4c;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register label {
+    text-align: left;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.register input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register button {
+    background-color: #8c292a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register button:hover {
+    background-color: #9c5454;
+}
+
+.register p {
+    margin-top: 10px;
+}
+
+.register a {
+    color: #8c292a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.message {
+    color: red;
+    font-weight: bold;
+}

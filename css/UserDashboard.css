@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/*  (theme colors, styles, etc.) */
+:root {
+    --background: #1e1f3d;
+    --text-color: #ffffff;
+    --button-bg: #8c292a;
+    --button-hover: #9c5454;
+    --header-bg: #2a2e4c;
+    --header-text-color: #ffffff;
+    --logout-bg: #8c292a;
+    --logout-hover: #d32f2f;
+    --update-btn: #497e50;
+    --update-hover: #5a9862;
+    --table-header-bg: rgba(255, 255, 255, 0.1);
+    --accent-color: #d4af37;
+    --card-bg: rgba(255, 255, 255, 0.07);
+    --border-radius: 12px;
+    --box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--background);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--header-bg);
+    color: var(--header-text-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.dashboard-link, .logout-btn {
+    color: var(--header-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.dashboard-link:hover {
+    color: var(--accent-color);
+}
+
+.logout-btn {
+    background-color: var(--logout-bg);
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    background-color: var(--logout-hover);
+}
+
+/* Dashboard */
+.dashboard {
+    margin-top: 60px;
+    padding: 30px 20px;
+    flex: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: var(--box-shadow);
+}
+
+.dashboard h1 {
+    font-size: 2.2rem;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.dashboard p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #dddddd;
+    text-align: center;
+}
+
+.dashboard ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.dashboard ul li {
+    width: 100%;
+    text-align: center;
+}
+
+.dashboard h2 {
+    font-size: 1.6rem;
+    margin: 20px 0;
+    font-weight: 500;
+    color: var(--accent-color);
+    text-align: center;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background-color: var(--button-bg);
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    min-width: 220px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+table thead th {
+    background-color: var(--table-header-bg);
+    padding: 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--accent-color);
+}
+
+table tbody td {
+    padding: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+table tbody tr td:last-child {
+    padding: 10px 15px;
+}
+
+/* Status styling */
+td:nth-child(6) {
+    text-transform: capitalize;
+}
+
+/* Add a class for status if you want to style it as a badge */
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #ffc107;
+    color: #333;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.update-btn, .cancel-btn {
+    padding: 8px 0;
+    font-size: 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    min-width: 90px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.update-btn {
+    background-color: var(--update-btn);
+}
+
+.update-btn:hover {
+    background-color: var(--update-hover);
+    transform: translateY(-2px);
+}
+
+.cancel-btn {
+    background-color: var(--button-bg);
+}
+
+.cancel-btn:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-2px);
+}
+
+/* Empty state */
+.dashboard p:last-child {
+    text-align: center;
+    font-style: italic;
+    color: #aaa;
+}
+
+.success-message {
+    background-color: #2ecc71;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px;
+    margin: 80px auto 15px auto;  /* Add more top margin */
+    max-width: 600px;
+    font-weight: bold;
+    z-index: 1000;
+    position: relative;
+    transition: opacity 0.5s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    table {
+        font-size: 14px;
+    }
+
+    table th, table td {
+        padding: 12px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        padding: 20px 15px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .dashboard h1 {
+        font-size: 1.8rem;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .update-btn, .cancel-btn {
+        width: 100%;
+    }
+
+    .user-info {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 15px;
+    }
+
+    .dashboard {
+        margin-top: 50px;
+        padding: 15px 10px;
+    }
+
+    /* Make the table scrollable horizontally on small screens */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: none;
+    }
+
+    .dashboard h1 {
+        font-size: 1.5rem;
+    }
+
+    .dashboard h2 {
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,65 @@
+/* Slider Section */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.slides:first-child {
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive slider adjustments */
+@media screen and (max-width: 768px) {
+    .slider {
+        height: 250px;
+    }
+
+    .prev, .next {
+        padding: 10px;
+    }
+}

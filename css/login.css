@@ -1,0 +1,137 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--theme-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    background: #fff;
+    padding: 55px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    position: relative;
+}
+
+/* Back to Home Icon */
+.back {
+    position: absolute; /* Positioned relative to its nearest positioned ancestor (container) */
+    top: 10px; /* Adjusted for better positioning inside the container */
+    left: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.back a {
+    text-decoration: none;
+    color: #2a2e4c; /* Keeping color consistent with other icons */
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.back a:hover {
+    color: #000;
+    background-color: #e0e0e0;
+}
+
+.fas.fa-backward {
+    margin-right: 5px;
+}
+
+/* Form Styling */
+.login-form h2 {
+    color: #2a2e4c;
+    margin-bottom: 20px;
+}
+
+/* Input Containers */
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2a2e4c;
+}
+
+.input-container {
+    width: 100%;
+    padding: 10px;
+    padding-left: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    border-color: #2a2e4c;
+    box-shadow: 0 0 5px rgba(108, 52, 131, 0.5);
+}
+
+/* Button Styling */
+button {
+    background: #8c292a;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 90%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #9c5454;
+}
+
+/* Register Link */
+.register-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #8c292a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border: 1px solid #f5c6cb;
+}
+
+.message.success {
+    color: #155724;
+    background-color: #d4edda;
+    padding: 10px 15px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+

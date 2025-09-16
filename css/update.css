@@ -1,0 +1,164 @@
+/* Base styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2a2d42;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Container for the page */
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+/* Page title */
+.page-title {
+    color: #f6c742;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Card-style form container */
+.update-container {
+    background-color: #343854;
+    border-radius: 8px;  /* Rounded corners for soft design */
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grouping labels and inputs */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+label {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    padding: 12px 15px;
+    border: 1px solid #4a4d61;
+    background-color: #2a2d42;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus {
+    border-color: #f6c742;
+    box-shadow: 0 0 0 2px rgba(246, 199, 66, 0.2);
+}
+
+/* Submit button */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 30px auto 0;
+    padding: 12px 25px;
+    background-color: #b33030;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #972929;
+}
+
+/* Date picker icon for dark mode */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1) sepia(100%) saturate(10000%) hue-rotate(330deg);
+    cursor: pointer;
+}
+
+/* Message boxes */
+.error-message {
+    background-color: rgba(255, 87, 87, 0.2);
+    color: #ff5757;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border-left: 4px solid #ff5757;
+}
+
+.success-message {
+    background-color: rgba(87, 255, 135, 0.2);
+    color: #57ff87;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border-left: 4px solid #57ff87;
+}
+
+/* Dropdown styling */
+select {
+    padding: 12px 15px;
+    border: 1px solid #4a4d61;
+    background-color: #2a2d42;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 4px;
+}
+
+select:focus {
+    border-color: #f6c742;
+    box-shadow: 0 0 0 2px rgba(246, 199, 66, 0.2);
+}
+
+
+
+/* Responsive design */
+@media (max-width: 640px) {
+    .container {
+        padding: 15px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label {
+        margin-bottom: 8px;
+    }
+}

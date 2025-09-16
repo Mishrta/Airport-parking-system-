@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2a2e4c;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Confirmation Container */
+.confirmation-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Heading */
+.confirmation-container h2 {
+    font-size: 36px;
+    color: #4a235a;
+    margin-bottom: 20px;
+}
+
+/* Paragraph */
+.confirmation-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Booking Details List */
+.confirmation-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.confirmation-container ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Strong for labels in the list */
+.confirmation-container ul li strong {
+    font-weight: bold;
+    color: #4a235a;
+}
+
+/* Go to Homepage Button */
+.confirmation-container a {
+    display: inline-block;
+    background-color: #8c292a;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.confirmation-container a:hover {
+    background-color: #9c5454;
+}
+
+/* Additional Styling for Responsive */
+@media screen and (max-width: 768px) {
+    .confirmation-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .confirmation-container h2 {
+        font-size: 28px;
+    }
+
+    .confirmation-container ul li {
+        font-size: 16px;
+    }
+
+    .confirmation-container a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
